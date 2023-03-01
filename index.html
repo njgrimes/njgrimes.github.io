@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3ad31c1455.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h2 class="logo">Noah.</h2>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi, I'm <span>Noah Grimes</span><br>From Southeastern University</h1>
+            <img class="header-img" src="images/headshot.png">
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently a student at Southeastern University studying Organizational Leadership. First, I am a musician with a strong love for worship. I am a drummer and I have been involved with SEU Worship since moving to Lakeland, FL. However, I also have a passion for technology. I absolutely love to code and build projects on my free time. Bringing faith into the technology world is a dream of mine. I also have a burning desire to work with YOU! I love all things backend and frontend. Feel free to look at my projects and contact me indivually and on social media! Have a great day!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Visualizing Data For Analysis</li>
+                        <li><span>HTML/CSS/JavaScript</span><br>Frontend Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020-2021</span><br>Pionered a Fundamentals of Python Class</li>
+                        <li><span>2022-Current</span><br>Frontend Student</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2021</span><br>High School Diploma from Trinity Christian School</li>
+                        <li><span>2021-Current</span><br>Studying B.S in Organizational Leadership from Southeastern University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------portfolio----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/idcards.webp">
+                <div class="layer">
+                    <h3>Basic ID Card Developer</h3>
+                    <p>Creates an ID card utilizing user input. </p>
+                    <a href="https://github.com/njgrimes/ID-Card-Developer"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>  
+            </div>
+            <div class="work">
+                <img src="images/covid19.jpeg">
+                <div class="layer">
+                    <h3>COVID-19 Data Visualizer</h3>
+                    <p>Delivers analytical data visualition of various COVID-19 statistics.</p>
+                    <a href="https://github.com/njgrimes/Covid-Data-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/calc.jpeg">
+                <div class="layer">
+                    <h3>Differential Equation Solver</h3>
+                    <p>Solves multiple types of advanced mathematical equations while delivering visualization of solving methods.</p>
+                    <a href="https://github.com/njgrimes/Calculator-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="repo-list">
+            <h2>Other Repository  <i class="fa-sharp fa-solid fa-link"></i>'s</h2>
+            <ul></ul>
+        </div>
+        <a href="https://github.com/njgrimes" class="btn">My GitHub Profile <i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+<!-- ---------contact------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> njgrimes99@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 770-545-0974</p>
+                <div class="social-icons">
+                    <a href="https://github.com/njgrimes"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/noah-grimes-a78b55267/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/noah.grimes.16906"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/noah_jg16"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/noahjgrimes/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name='submit-to-google-sheet'>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+    <p><i class="fa-regular fa-envelope"></i>  njgrimes99@gmail.com</p>
+ </footer> 
+</html>
