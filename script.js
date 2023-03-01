@@ -55,11 +55,11 @@ form.addEventListener('submit', e => {
 })
 
 // --------IPhone-----
-var sidemeu = document.getElementById("sidemenu");
+var side = document.getElementById("sidemenu");
 
 function openmenu(){
-    sidemeu.style.right = "0";
+    side.style.right = "0";
 }
 function closemenu(){
-    sidemeu.style.right = "-200px";
+    side.style.right = "-200px";
 }
