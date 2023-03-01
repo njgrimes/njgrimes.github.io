@@ -39,7 +39,7 @@ fetch(url)
 // --------Contact Form------
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzb3X-G3kWz8K2t4rLBx4zDsh9yQyhA6P-I7PgX1C49FHVpA9a-aG9XLJx6alDomSZZMQ/exec'
 const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById('msg')
+const msg = document.querySelector("#msg");
 
 form.addEventListener('submit', e => {
     e.preventDefault()
@@ -54,4 +54,12 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
+// --------IPhone-----
+var sidemeu = document.getElementById("sidemenu");
 
+function openmenu(){
+    sidemeu.style.right = "0";
+}
+function closemenu(){
+    sidemeu.style.right = "-200px";
+}
